@@ -16,10 +16,12 @@ int main() {
     }
     int n=v.size();
     cout<<"Last element:"<<v[n-1]<<endl;
+    v.pop_back();
     cout<<"Modified:"<<endl;
     for(int i:v){
         cout<<i<<" ";
     }
+    v.pop_back();
     v.pop_back();
     cout<<"\n"<<endl;
     cout<<"After deleting the last elements:"<<endl;
@@ -40,7 +42,6 @@ int main() {
     v.erase(v.begin());
     v.clear();
     cout<<"After removing all the element in the vector:"<<endl;
-
     for(int i:v){
         cout<<i<<" ";
     }
